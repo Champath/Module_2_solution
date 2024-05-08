@@ -1,0 +1,78 @@
+#cen
+{
+    text-align: center;
+}
+body
+{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    display: flex;
+  }
+  .box {
+    position: relative;
+    flex: 1;
+    background-color: gray;
+    margin: 10px;
+    height: 200px;
+    border: 3px solid black;
+    padding: 10px;
+    overflow: hidden;
+}  
+
+#pl1
+{
+    position: absolute;
+    top: -2px; 
+    right: -2px;
+    padding: 5px; 
+    background-color: lightcoral;
+    border: 2px solid black;
+    text-align: center;
+}
+#pl2
+{
+  position: absolute; 
+  top: -2px; 
+  right: -2px; 
+  padding: 5px;
+  color: white;
+  background-color: red;
+  border: 2px solid black;
+  text-align: center;
+}
+#pl3
+{
+  position: absolute; 
+  top: -2px; 
+  right: -2px; 
+  padding: 5px;
+  background-color:rgb(182, 182, 21);
+  border: 2px solid black;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .section {
+    width: 33.33%; 
+    float: left;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 50%;
+    float: left;
+  }
+  .section3 {
+    width: 100%; 
+    clear: both; 
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    width: 100%; 
+    float: none; 
+  }
+}
